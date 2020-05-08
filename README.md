@@ -1,4 +1,10 @@
-# 環境構築
+# twirl-pdf-template
+
+scalaでtwirlとwkhtmltopdfを使ってpdfを生成するテンプレートです。
+
+`*.scala.html`のテンプレートファイルと受け渡すデータ(`json`ファイル)を書くだけで、静的なpdfファイルを生成することができます。
+
+## 環境構築
 
 ```sh
 git clone https://github.com/282Haniwa/twirl-pdf-template.git
