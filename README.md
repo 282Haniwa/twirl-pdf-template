@@ -47,16 +47,17 @@ mockデータファイル(`json`)を`src/mock/[ディレクトリ]/`以下に作
 
 ### 4.実装する
 
-mockの実装
+#### mockの実装
+
 mockデータの`json`とテンプレートファイルを実装していく。
 
 mockデータのフィールドの例：
 
 ```json
 {
-  "name": "test1_data1.pdf",
-  "command": "wkhtmltopdf",
-  "data": {}
+  "name": "test1_data1.pdf",
+  "command": "wkhtmltopdf",
+  "data": {}
 }
 ```
 
@@ -68,7 +69,8 @@ mockデータのフィールドの例：
 
 
 
-テンプレートの実装
+#### テンプレートの実装
+
 テンプレートファイルの実装は以下のリンクを参照
 
 dataオブジェクトのアクセス方法([play-json](https://github.com/playframework/play-json)のライブラリを使っているので、以下のドキュメントを参照)
