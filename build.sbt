@@ -4,7 +4,7 @@ val cleanDest = taskKey[Unit]("clean dest")
 
 val destDir = "dest"
 
-name := "twirlHelloWorld"
+name := "twirlPdfTemplate"
 version := "1.0"
 
 scalaVersion := "2.13.2"
