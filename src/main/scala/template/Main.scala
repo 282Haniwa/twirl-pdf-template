@@ -23,17 +23,19 @@ object Main extends App {
     .foreach((target) => {
       if (target.isDirectory()) {
         val targetName: String = target.getName()
-        println(s"---${targetName}---")
+        // println(s"---${targetName}---")
         Mock.withMock(
           targetName,
           (json, mockPath) => {
-            println(s"---${mockPath}---")
+            println(s"Print ${targetName} with ${mockPath} to ${destDirPath}/${json("name").as[String]}")
+            // println(s"---${mockPath}---")
             val html = Template.getTemplate(targetName)(json("data"))
-            println(html)
+            // println(html)
             val inputStream =
               new ByteArrayInputStream(html.toString().getBytes("UTF-8"))
             Process(s"${json("command").as[String]} - ${destDirPath}/${json("name").as[String]}")
               .#<(inputStream)
+              .#>("/dev/null")
               .run()
           }
         )
