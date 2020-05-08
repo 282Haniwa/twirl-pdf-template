@@ -1,0 +1,16 @@
+{
+    "name": "sample2.pdf",
+    "command": "wkhtmltopdf --disable-smart-shrinking --encoding utf8 --page-size A4",
+    "data": {
+        "name": "サンプル２",
+        "object": {
+            "hoge": "ほげ",
+            "fuga": "ふが"
+        },
+        "array": [
+            "１つ目",
+            "２つ目",
+            "３つ目"
+        ]
+    }
+}

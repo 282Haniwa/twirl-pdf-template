@@ -1,0 +1,16 @@
+{
+    "name": "sample1.pdf",
+    "command": "wkhtmltopdf --disable-smart-shrinking --encoding utf8 --page-size A4",
+    "data": {
+        "name": "sample1",
+        "object": {
+            "hoge": "hoge",
+            "fuga": "fuga"
+        },
+        "array": [
+            "1st",
+            "2nd",
+            "3rd"
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+@(data: play.api.libs.json.JsValue)
+
+<html>
+  <h1>test1</h1>
+  <h2>mock name: @data("name")</h2>
+  <p>object: @data("object")</p>
+  <ul>
+    @for(element <- data("array").as[Array[String]]) {
+      <li>@element</li>
+    }
+  </ul>
+</html>
