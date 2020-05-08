@@ -83,7 +83,7 @@ dataオブジェクトのアクセス方法([play-json](https://github.com/playf
 
 https://www.playframework.com/documentation/2.7.x/ScalaJson
 
-基本的にオブジェクトのキーで`data("hoge")("huga")`のように参照できる。
+基本的にオブジェクトのキーで`data("hoge")("huga").as[String]`のように参照できる。
 
 配列などは`data("array").as[Array[String]]`のように型を`Array[String]`に変換することで参照できる。
 
