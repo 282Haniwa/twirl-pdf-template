@@ -33,9 +33,8 @@ object Main extends App {
             // println(html)
             val inputStream =
               new ByteArrayInputStream(html.toString().getBytes("UTF-8"))
-            Process(s"${json("command").as[String]} - ${destDirPath}/${json("name").as[String]}")
+            Process(s"${json("command").as[String]} --quiet - ${destDirPath}/${json("name").as[String]}")
               .#<(inputStream)
-              .#>("/dev/null")
               .run()
           }
         )
